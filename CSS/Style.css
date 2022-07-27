@@ -1156,6 +1156,10 @@ textarea{
 		width: 100%;
 		max-width: 290px;
 	}
+	
+	.menu{
+		width: 50%;
+	}
 
 	.intro_-title{
 		font-size: 9vw;
