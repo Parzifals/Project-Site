@@ -15,25 +15,23 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
-				
-				<div class="header__Logo">Your Logo</div>
+				<div><a href="#" class="header__Logo">Your Logo</a></div>
 
 				<nav class="Nav">
-					<a class="nav__link" href="#">Home</a>
-					<a class="nav__link" href="#">About</a>
-					<a class="nav__link" href="#">Servicing</a>
-					<a class="nav__link" href="#">Portfolio</a>
-					<a class="nav__link" href="#">Blog</a>
-					<a class="nav__link" href="#">Contact us</a> 
+					<ul class="navbar_menu">
+						<li><a href="#about" class="nav__link">About</a></li>
+						<li><a href="#works" class="nav__link">Works</a></li>
+						<li><a href="#our_team" class="nav__link">Team Member</a></li>
+						<li><a href="#blog" class="nav__link">Blog</a></li>
+						<li><a href="#footer" class="nav__link">Contact us</a></li>
+					</ul>
 					<span class="search-box">
 						<input class="search-txt" type="text" placeholder="Type to search" required>
 						<a class="search-btn" href="#">
 							<i class="fas fa-search"></i>
 						</a>
 					</span>
-					<a href="$" class="menu-open"><img src="imeges/menu.png" alt="#"></a>
 				</nav>
-
 			</div>
 			
 			<div class="intro">
@@ -52,13 +50,23 @@
 					</div>
 				</div>
 			</div>
+			<div class="menu">
+				<button class="menu-open" id="menu_open"><img src="imeges/menu.png" alt="#"></button>
+				<nav class="menu_list">
+					<a href="#about"> About</a>
+					<a href="#works">Works</a>
+					<a href="#our_team">Team Member</a>
+					<a href="#blog">Blog</a>
+					<a href="#footer">Contact</a>
+				</nav>
+			</div>
 		</div>
 	</header>
 	
 <!-- Main -->
 
 <div class="container">
-	<section class="section">
+	<section class="section" id="about">
 		<div class="container__section">
 			<div class="section__header">
 					<h2 class="section__title">About Us</h2>
@@ -88,7 +96,7 @@
 		</div>
 	</section>
 
-	<section class="section_services">
+	<section class="section_services" id="serviving">
 		<div class="section_header_services">
 			<h2 class="section__title">
 				Our Services
@@ -150,7 +158,7 @@
 	</section>
 	
 	<!-- Latest Works -->
-	<section class="latest_work">
+	<section class="latest_work" id="works">
 		<div class="text_work">
 			<h2 class="h2_work">Latest Works</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
@@ -220,7 +228,7 @@
 
 	<!-- Pricing Plan -->
 
-	<section class="pricing_plan">
+	<section class="pricing_plan" id="plan">
 		<div class="plan_head">
 			<h2	class="h2_work">Pricing Plan</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
@@ -266,7 +274,7 @@
 
 	<!-- Our Team Member -->
 
-	<section class="our_team_member">
+	<section class="our_team_member" id="our_team">
 		<div class="text_member">
 			<h2>Our Team Member</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
@@ -310,7 +318,7 @@
 
 	<!-- Blog -->
 
-	<section class="blog">
+	<section class="blog" id="blog">
 		<div class="text_blog">
 			<h2>Blog</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
@@ -391,6 +399,7 @@
 		</div>
 	</div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="js/libs/JQuery/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
